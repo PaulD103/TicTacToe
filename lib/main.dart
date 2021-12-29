@@ -12,6 +12,7 @@ class TicTacToe extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'TicTacToe',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: const ColorScheme.dark(
           primary: Color(0xff2A0944),

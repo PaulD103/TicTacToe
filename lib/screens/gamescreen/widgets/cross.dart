@@ -8,8 +8,8 @@ class Cross extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 50,
-      width: 50,
+      height: 70,
+      width: 70,
       child: Stack(
         alignment: Alignment.center,
         children: <Widget>[
@@ -28,14 +28,14 @@ class Cross extends StatelessWidget {
           Radius.circular(5),
         ),
       ),
-      height: 60,
+      height: 80,
       width: 12,
     );
   }
 }
 
-class CrossWinned extends StatelessWidget {
-  const CrossWinned();
+class WinningCross extends StatelessWidget {
+  const WinningCross();
 
   @override
   Widget build(BuildContext context) {
