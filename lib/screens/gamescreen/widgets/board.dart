@@ -8,17 +8,18 @@ class Board extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final size = MediaQuery.of(context).size.width;
     return Container(
       padding: const EdgeInsets.all(8),
-      height: MediaQuery.of(context).size.width * .95,
-      width: MediaQuery.of(context).size.width * .95,
+      height: size * .95,
+      width: size * .95,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(5),
         color: Theme.of(context).colorScheme.secondary,
       ),
       child: GridView.count(
-        crossAxisSpacing: MediaQuery.of(context).size.width * .035,
-        mainAxisSpacing: MediaQuery.of(context).size.width * .035,
+        crossAxisSpacing: size * .035,
+        mainAxisSpacing: size * .035,
         crossAxisCount: 3,
         children: boardFillData,
       ),
